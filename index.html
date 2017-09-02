@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Head of the Root -->
+<head> <!-- child sub root of the html tag as head tag  -->
+	<meta charset="UTF-8">
+    <title>Help boxes</title>
+</head>
+<body>
+    <p id="Output">Helpful notes will appear here</p>
+<p>Name: <input type="text" id="name" onfocus="showHelp(0)" name="name"></p>
+<p>Age: <input type="text" id="age" onfocus="showHelp(1)" name="age"></p>
+<p>City: <input type="text" id="city" name="city" onfocus="showHelp(2)"></p>
+<script>
+function showHelp(index) {
+  document.getElementById('Output').innerHTML = help[index];
+}
+
+var help = ['Please input the username','Please input the age','Please input the city'];
+</script>
+</body>
+</html>
